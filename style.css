@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html{
+    min-width: 375px;
+    max-width: 100vw;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20em;
+    height: 25em;
+    align-items: center;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.header{
+    width: 100%;
+    height: 35%;
+    background-color:  hsl(185, 75%, 39%);
+    background: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1em 1em 0em 0em;
+}
+
+.image-profile{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 55%;
+    margin: auto;
+    background-image: url(./images/image-victor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 150px;
+    border: solid 5pt white;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    margin-top: 2em;
+
+
+}
+
+.contents-profile{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+.contents h1{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.contents span{
+    font-weight: 400;
+    margin-left: 0.1em;
+    color:hsl(0, 0%, 59%);
+    font-size: 15px;
+}
+
+.insights{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5em;
+    list-style: none;
+    border-top: solid 0.1pt hsla(0, 0%, 59%, 0.466);
+    padding: 2em;
+}
+
+.insights li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.4em;
+}
+
+.insights h1{
+    font-size: 18px;
+}
+
+.insights span{
+    letter-spacing: 1pt;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(0, 0%, 59%);
+}
